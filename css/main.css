@@ -4,14 +4,14 @@
 /*Remove this rule, this is only for demo purposes to make the boxes black with white text
 The line height on the <p> tag gives each box a height value*/
 
-p
+/*p
 {
 	color: #fff;
 	line-height: 100px;
 	background: #000;
 	text-align: center;
 	margin: 0;
-}
+}*/
 
 /*basic reset*/
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
@@ -43,13 +43,37 @@ body
 a:visited is for visited, and just a applies to both.*/
 /*a will also style anchor links*/
 
-a:link, a:visited 
+.Head a:link 
 { 
+	color: #be0072;
  	text-decoration:none; 	
 }
 
-a:hover, a:active 
+.Head a:hover
 { 
+	color: #000;
+	text-decoration:none; 
+}
+.Head a:active
+{ 
+	color: #000;
+	text-decoration:none; 
+}
+
+}
+.Foot a:link, 
+{
+	color: #fff;
+	text-decoration: none;
+}
+.Foot a:hover
+{
+	color: #000;
+	text-decoration: none;
+}
+.Foot a:active
+{ 
+	color: #000;
 	text-decoration:none; 
 }
 
@@ -63,7 +87,7 @@ a:hover, a:active
 /*section is block level and no width specidied therefore stretches full screen*/
 #topBar
 {
-	background-color: #000;
+	background-color: #be0072;
 	height: 20px;
 }
 
@@ -101,7 +125,9 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #mainNav 
 {
 	margin-left: auto;
-	width: 500px;
+	width: 300px;
+	color: #be0072;
+	font-size: 16px;
 }
 
 #promo 
@@ -164,6 +190,11 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #footerNav 
 {
 	width: 500px;
+	line-height: 100px;
+	background: #be0072;
+	text-align: center;
+	margin: 0;
+	font-size: 16px;
 }
 
 #copyRight 
