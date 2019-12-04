@@ -4,8 +4,8 @@
 /*Remove this rule, this is only for demo purposes to make the boxes black with white text
 The line height on the <p> tag gives each box a height value*/
 
-/*p
-{
+p
+/*{
 	color: #fff;
 	line-height: 100px;
 	background: #000;
@@ -89,6 +89,8 @@ a:visited is for visited, and just a applies to both.*/
 {
 	background-color: #be0072;
 	height: 20px;
+	margin-right: 178px;
+	margin-left: 178px;
 }
 
 /*Site Container*/
@@ -98,32 +100,40 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #siteContainer 
 {
 	margin: 0 auto;
-	width: 920px;
+	width: 940px;
 	padding-left: 20px;
 	padding-right: 20px;
+	background-color: #856f79;
 }
 
 /*This is a flex container*/
 #mainHeader
 {
-	margin-top: 40px;
-	padding-bottom: 40px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-bottom: 20px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
 	border-bottom: solid 1px #DDD;
+	background: url(../images/banner_cropped.jpg) repeat;
+
 }
 
 /*This is a flex item*/
 #logo
 {
 	width: 200px;
+	margin-top: 20px;
+	margin-left: 10px;
 }
 
 /*This is also a flex item*/
 /*We use margin left auto to send it all the way to the right*/
 #mainNav 
 {
+	margin-top: 50px;
 	margin-left: auto;
 	width: 300px;
 	color: #be0072;
@@ -146,10 +156,10 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	line-height: 250px;
 }
 
-#promoText 
+/*#promoText 
 {
 	width: 600px;
-}
+}*/
 
 #promoImage 
 {
@@ -180,11 +190,12 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #mainFooter 
 {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 0px;
+	margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
+  	background: url(../images/footer_cropped.jpg);
 }
 
 #footerNav 
