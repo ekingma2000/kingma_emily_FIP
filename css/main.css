@@ -203,7 +203,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-top: 20px;
 }
 
-/*Page 2 - Notice we are using one style sheet for all of the pages*/
+/*Contact*/
 
 #contentCon {
 	margin-top: 40px;
@@ -228,47 +228,47 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #content2 
 {
 	margin-left: auto;
+	margin-top: 100px;
 	width: 440px;
-}
-
-/*Page 3*/
-
-#productImages 
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
 	display: flex;
-	flex-direction: row;
-  	justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-between;
+
 }
 
-/*Get rid of this, here just to give different height*/
-#productImages p
-{
-	line-height: 250px;
+input, textarea {
+	font-size: 11px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 300px;
+	height: 10px;
+	background-color: #efefef;
+	display: block;
+	border-right: 1px solid #999;
+	color: #ccc;
+}
+input {
+	margin-left: 30px;
 }
 
-.productImg 
-{
-	width: 280px;
+#comments {
+	width:360px;
+	height: 200px;
+	color: black;
 }
 
-
-#contentAreaBig
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+#submit {
+	font-size: 14px;
+	width:100px;
+	text-align: center;
+	height: 40px;
+	margin-left: 140px;
+	color: black;
+	margin-bottom: 20px;
 }
 
-/*Get rid of this, here just to give different height*/
-#contentAreaBig p 
-{
-	line-height: 300px;
-}
-
-/*Page 4*/
+/*Looks Page*/
 
 #promoImageBig
 {

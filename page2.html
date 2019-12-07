@@ -6,19 +6,55 @@
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<section id="topBar"></section><!--end topBar-->
-	<div id="siteContainer">
-    	<header id="mainHeader">
-        	<div id="logo"><p>Logo</p></div><!--end logo-->
-            <nav id="mainNav"><p>Nav</p></nav><!--end mainNav-->
-        </header><!--end mainHeader-->
+	<!--TOPBAR-->
+    <section id="topBar"></section>
+    <!-- CONTROLS SPACEING BETWEEN CONTAINERS-->
+    <div id="siteContainer">
+        <header id="mainHeader">
+            <!--LOGO-->
+            <div id="logo">
+                <img src="images/FIP_Logo.png" alt="Logo" width="300px">
+            </div>
+            <!--HEADER NAV-->
+            <nav id="mainNav" id="Head">
+                <a href="index.html">Home |</a>
+                <a href="lastestLooks.html"> Latest Looks |</a>
+                <a href="page2.html"> Contact</a>
+            </nav>
+        </header>
         <section id="contentCon">
-        	<div id="content1"><p>Content Area 1</p></div><!--end content1-->
-        	<div id="content2"><p>Content Area 2</p></div><!--end content2-->
+        	<div id="content1">
+                <img src="images/contact.jpg" alt="contact">   
+            </div><!--end content1-->
+        	<div id="content2">
+                <form id="contactForm" action="form.php" method="post">
+                        <label></label>
+                        <input type="text" required size="30" placeholder="First and Lastname">
+
+                        <label></label>
+                        <input type="email" required size="30" placeholder="Email">
+
+                        <textarea id="comments" required cols="50" rows="8"></textarea>
+
+                        <input id="submit" type="submit" value="Submit">
+                    </form>   
+            </div><!--end content2-->
         </section><!--end contentCon-->
         <footer id="mainFooter">
-        	<div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
+            <h2 class="hidden">Main Footer</h2>
+            <!--FOOTER NAV-->
+            <div id="footerNav">
+                <h2 class="hidden">Footer Nav</h2>
+                <nav id="Foot">
+                    <a href="index.html">Home |</a>
+                    <a href="page3.html"> Latest Looks |</a>
+                    <a href="page2.html"> Contact</a>
+                </nav>
+            </div>
+            <!--COPYRIGHT BOX-->
+            <div id="copyRight">
+                <img src="images/social_media.png" alt="social tags">
+            </div>
         </footer><!--end mainFooter-->
     </div><!--end siteContainer-->
 <script src="js/main.js"></script>    
