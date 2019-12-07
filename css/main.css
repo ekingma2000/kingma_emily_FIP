@@ -43,39 +43,19 @@ body
 a:visited is for visited, and just a applies to both.*/
 /*a will also style anchor links*/
 
-.Head a:link 
-{ 
-	color: #be0072;
- 	text-decoration:none; 	
-}
+ a:link {
+ 	text-decoration: none;
+ 	color: black;
+ }
+ a: hover {
+ 	text-decoration: none;
+ 	color: white;
+ }
+ a:visited {
+ 	text-decoration: none;
+ 	color: grey;
+ }
 
-.Head a:hover
-{ 
-	color: #000;
-	text-decoration:none; 
-}
-.Head a:active
-{ 
-	color: #000;
-	text-decoration:none; 
-}
-
-}
-.Foot a:link, 
-{
-	color: #fff;
-	text-decoration: none;
-}
-.Foot a:hover
-{
-	color: #000;
-	text-decoration: none;
-}
-.Foot a:active
-{ 
-	color: #000;
-	text-decoration:none; 
-}
 
 /*hide elements from browser but show for doc outline*/
 
@@ -89,8 +69,8 @@ a:visited is for visited, and just a applies to both.*/
 {
 	background-color: #be0072;
 	height: 20px;
-	margin-right: 178px;
-	margin-left: 178px;
+	margin-right: 184px;
+	margin-left: 185px;
 }
 
 /*Site Container*/
@@ -110,8 +90,8 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #mainHeader
 {
 	margin-top: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: -20px;
+	margin-right: -20px;
 	padding-bottom: 20px;
 	display: flex;
 	flex-direction: row;
@@ -133,11 +113,14 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 /*We use margin left auto to send it all the way to the right*/
 #mainNav 
 {
-	margin-top: 50px;
-	margin-left: auto;
-	width: 300px;
-	color: #be0072;
-	font-size: 16px;
+	width: 500px;
+	line-height: 100px;
+	background: #be0072;
+	text-align: center;
+	margin-left: 250px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 25px;
 }
 
 #promo 
@@ -170,6 +153,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #productInfo 
 {
 	margin-top: 40px;
+	margin-left: 25px;
 	display: flex;
 	flex-direction: row;
   	justify-content: space-between;
@@ -190,8 +174,10 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #mainFooter 
 {
-	margin-top: 0px;
-	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	margin-left: -20px; 
+	margin-right: -20px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
@@ -204,14 +190,17 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	line-height: 100px;
 	background: #be0072;
 	text-align: center;
-	margin: 0;
-	font-size: 16px;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 25px;
 }
 
 #copyRight 
 {
 	margin-left: auto;
 	width: 310px;
+	margin-top: 20px;
 }
 
 /*Page 2 - Notice we are using one style sheet for all of the pages*/
