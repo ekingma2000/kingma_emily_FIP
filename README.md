@@ -2,7 +2,7 @@
 
 ## Requirements 
 
-A modern browser, Firefox is prefered 
+A modern browser, Chrome is prefered 
 
 ## Built with
 
