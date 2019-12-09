@@ -47,20 +47,23 @@ a:visited is for visited, and just a applies to both.*/
  	text-decoration: none;
  	color: black;
  }
- a: hover {
- 	text-decoration: none;
- 	color: white;
- }
  a:visited {
  	text-decoration: none;
- 	color: grey;
+ 	color: black;
+ }
+ a:active {
+ 	text-decoration: none;
+ 	color: black;
+ }
+  a:hover {
+ 	text-decoration: none;
+ 	color: white;
  }
 
 
 /*hide elements from browser but show for doc outline*/
 
-.hidden
-{
+.hidden{
 	display: none;
 }
 
@@ -120,7 +123,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-left: 250px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-size: 25px;
+	font-size: 24px;
 }
 
 #promo 
@@ -153,7 +156,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #productInfo 
 {
 	margin-top: 40px;
-	margin-left: 25px;
 	display: flex;
 	flex-direction: row;
   	justify-content: space-between;
@@ -161,21 +163,60 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	padding-bottom: 40px;
 }
 
-/*Get rid of this, here just to give different height to productInfo*/
-#productInfo p 
-{
-	line-height: 300px;
+
+#link {
+	font-size: 16px;
+	text-align: center;
+	margin-top: 100px;
 }
 
-.productDesc 
-{
+
+.productDesc1{
 	width: 200px;
+	height: 300px;
+	background: url(../images/red_lips.jpg) no-repeat;
 }
+.productDesc2 {
+	width: 200px;
+	background: url(../images/Christmas_Look_index.jpg) no-repeat;
+	height: 300px;
+}
+.productDesc3 {
+	width: 200px;
+	background: url(../images/egypt.jpg) no-repeat;
+	height: 300px;
+}
+.productDesc4 {
+	width: 200px;
+	background: url(../images/snow_look_index.jpg) no-repeat;
+	height: 300px;
+}
+.productDesc1 a{
+	font-size: 24px;
+	margin-left: 0px;
+	position: relative; top:180px;
+}
+.productDesc2 a{
+	font-size: 24px;
+	margin-left: 0px;
+	position: relative; top:200px;
+}
+.productDesc3 a{
+	font-size: 24px;
+	margin-left: 0px;
+	position: relative; top:200px;
+}
+.productDesc4 a{
+	font-size: 24px;
+	margin-left:40px;
+	position: relative; top:200px;
+	}
+
+
 
 #mainFooter 
 {
 	margin-top: 20px;
-	margin-bottom: 0px;
 	margin-left: -20px; 
 	margin-right: -20px;
 	display: flex;
@@ -193,7 +234,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-left: 20px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-size: 25px;
+	font-size: 24px;
 }
 
 #copyRight 
@@ -201,29 +242,46 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-left: auto;
 	width: 310px;
 	margin-top: 20px;
+	text-align: center;
+	font-size: 12px;
 }
 
 /*Contact*/
 
+#contact {
+	color: #be0072;
+	font-size: 42px;
+	margin-left: 80px;
+}
+
 #contentCon {
-	margin-top: 40px;
+	margin-top: -40px;
 	border-bottom: solid 1px #DDD;
 	padding-bottom: 40px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
+
 }
 
-/*Get rid of this, here just to give different height to promo*/
-#contentCon p 
-{
-	line-height: 630px;
+#contentCon p {
+	margin-top: 150px;
+	text-align: center;
+	color: white;
+	font-size: 16px;
 }
 
 #content1 
 {
-	width: 440px;
+	width: 440px;  	
+	text-align: center;
+	color: #be0072;
+	font-size: 24px;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	
 }
+
 
 #content2 
 {
@@ -279,11 +337,29 @@ input {
 .productDescLargeLeft 
 {
 	width: 410px;
+	background: url(../images/christmas_Look.jpg);
+	height: 300px;
+}
+
+.productDescLargeLeft a {
+	font-size: 30px;
+	margin-left: 60px;
+	position: relative; top:220px;
+
 }
 
 .productDescLargeRight 
 {
 	width: 410px;
+	height: 300px;
 	margin-right: 20px;
+	background: url(../images/snow_look.jpg);
+}
+
+.productDescLargeRight a{
+	font-size: 30px;
+	margin-left: 130px;
+	position: relative; top:220px;
+
 }
 
