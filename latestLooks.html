@@ -2,56 +2,61 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Hello Beautiful - Looks</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<!--TOPBAR-->
-    <section id="topBar"></section>
-    <!-- CONTROLS SPACEING BETWEEN CONTAINERS-->
+    <section id="topBar">
+      <h2 class="hidden">topBar</h2>  
+    </section>   
     <div id="siteContainer">
+        <h2 class="hidden">mainHeader</h2>
         <header id="mainHeader">
-            <!--LOGO-->
             <div id="logo">
-                <img src="images/FIP_Logo.png" alt="Logo" width="300px">
+                <img src="images/FIP_Logo.png" alt="Logo" width="300">
             </div>
-            <!--HEADER NAV-->
-            <nav id="mainNav" id="Head">
-                <a href="index.html">Home |</a>
-                <a href="lastestLooks.html"> Latest Looks |</a>
-                <a href="page2.html"> Contact</a>
+            <nav id="mainNav">
+                <h2 class="hidden">mainNav</h2>
+                <a href="#">Home |</a>
+                <a href="latestLooks.html"> Latest Looks |</a>
+                <a href="contact.html"> Contact</a>
             </nav>
         </header>
         <section id="promo">
+            <h2 class="hidden">promo</h2>
         	<div id="promoImageBig">
                 <img src="images/Banner_LL.jpg" alt="face banner">   
-            </div><!--end promoImage-->
-        </section><!--end promo-->
+            </div>
+        </section>
         <section id="productInfo">
+            <h2 class="hidden">Look Info</h2>
         	<section class="productDescLargeLeft">
-                <img src="images/christmas_Look.jpg" alt="christmas">   
-            </section><!--end productDesc1-->
+                <h2 class="hidden">Christmas look</h2>
+                <a href="latestLooks.html">2019 Christmas Look</a>   
+            </section>
             <section class="productDescLargeRight">
-                <img src="images/snow_look.jpg" alt="snow">
-            </section><!--end productDesc4-->
-        </section><!--end productInfo-->
-         <footer id="mainFooter">
+                <h2 class="hidden">Snow look</h2>
+                <a href="latestLooks.html">Snow Look</a>
+            </section>
+        </section>
+        <footer id="mainFooter">
             <h2 class="hidden">Main Footer</h2>
-            <!--FOOTER NAV-->
             <div id="footerNav">
                 <h2 class="hidden">Footer Nav</h2>
                 <nav id="Foot">
+                    <h2 class="hidden">nav</h2>
                     <a href="index.html">Home |</a>
                     <a href="page3.html"> Latest Looks |</a>
                     <a href="page2.html"> Contact</a>
                 </nav>
             </div>
-            <!--COPYRIGHT BOX-->
             <div id="copyRight">
+                <h2 class="hidden">copyright</h2>
                 <img src="images/social_media.png" alt="social tags">
+                <h3>© Hello Beautiful 2019</h3>
             </div>
-        </footer><!--end mainFooter-->
-    </div><!--end siteContainer-->
+        </footer>
+    </div>
 <script src="js/main.js"></script>    
 </body>
 </html>
